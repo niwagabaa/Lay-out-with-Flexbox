@@ -1,0 +1,181 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 80px;
+    max-height: 50px;
+}
+
+.banner{
+    background: url("../img/lambo.jpg");
+    width: 100%;
+    background-size: cover;
+}
+
+.top-bar {
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    
+    color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 40px;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.menu {
+    -webkit-box-flex: 3px;
+    -moz-flex: 3px;
+    -ms-flex: 3px;
+    -o-flex: 3px; 
+    flex: 3px;
+       
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    flex-flow: row wrap;
+
+}
+.menu ul li{
+    flex: 1;
+    text-align: center;
+} 
+
+.menu ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* banner */
+.banner-text{
+    display: flex;
+    padding: 15% 0;
+}
+
+.banner-text-items {
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.banner-text-items h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.banner-text-items p {
+    font-style: 18px;
+}
+
+/* main content */
+.main-content{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5%;
+}
+
+
+
+.main1{
+    flex: 1;
+    padding: 3%;
+    text-align: center;
+}
+
+/* Contact */
+.contact-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact {
+    background: url(../img/df.jpg);
+    padding: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+
+}
+
+.contact-items h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.contact-items input[type="text"]{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 50%;
+}
+.contact-items textarea{
+    border-radius: 10px;
+    height: 150px;
+    padding: 15px;
+    width: 50%;
+}
+
+.contact-items a{
+    background: #da4b29;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 15px 70px;
+    text-transform: uppercase;
+}
+
+@media all and (max-width:500px){
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    menu ul li {
+        padding: 5px;
+    }
+    .banner-text-items{
+        width: 100%;
+    }
+    .banner-text-items h2{
+        font-size: 1.5em;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+}
+
